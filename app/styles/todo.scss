@@ -1,0 +1,94 @@
+
+
+.container {
+	position: releate;
+	.to-main {
+		padding: 5px;
+		background-color: #79e483;
+		display: block;
+		border: 1px solid rgb(24, 144, 144);
+		color: #3e3e3e;
+
+		position: fixed;
+		right: 20px;
+		top: 4px;
+	}
+	.todo-container {
+
+		margin: 0 20px;
+		.todo-header {
+			font-size: 30px;
+			color: #f60;
+		}
+		.todo-body {
+			ul.box {
+				padding: 0;
+				list-style: none;				
+				.todo-item {
+					padding: 10px;
+					
+					border-bottom: 1px solid #00FF7F;
+
+					&.active {
+						animation: myanim 1s;
+						-webkit-animation: myanim 1s;
+					}
+					.btn-group {
+						padding-left: 20px;
+					}
+					.btn {
+						cursor: pointer;
+						display: inline-block;
+						padding: 5px 8px;
+					}
+					.btn-recover {
+
+					}
+					.btn-complete {
+
+					}
+					.btn-update {
+
+					}
+					.btn-del {
+						color: #fff;
+						background-color: #f00;
+					}
+				}
+			}
+		}
+		.todo-add {
+			padding: 15px 0;
+			background-color: coral;
+			.input-box {
+				font-size: 16px;
+				height: 20px;
+				padding: 8px 10px;
+				//width: 360px;
+				width: 55%;
+				margin-left: 10px;
+				border: 1px solid #ccc;
+				&:focus {
+					border-color: #f60;
+				}
+			}
+			.btn-add {
+				font-size: 16px;
+				font-family: "Microsoft YaHei";
+				padding: 8px 22px;
+				border: 1px solid #abc;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+	}
+}
+
+@-webkit-keyframes myanim {
+	0% {
+		margin-left: -500px;
+	}
+	100% {
+		margin-left: 0;
+	}
+}

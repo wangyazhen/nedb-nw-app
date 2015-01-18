@@ -1,0 +1,66 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+.container {
+  position: releate; }
+  .container .to-main {
+    padding: 5px;
+    background-color: #79e483;
+    display: block;
+    border: 1px solid #189090;
+    color: #3e3e3e;
+    position: fixed;
+    right: 20px;
+    top: 4px; }
+  .container .todo-container {
+    margin: 0 20px; }
+    .container .todo-container .todo-header {
+      font-size: 30px;
+      color: #f60; }
+    .container .todo-container .todo-body ul.box {
+      padding: 0;
+      list-style: none; }
+      .container .todo-container .todo-body ul.box .todo-item {
+        padding: 10px;
+        border-bottom: 1px solid #00FF7F; }
+        .container .todo-container .todo-body ul.box .todo-item.active {
+          animation: myanim 1s;
+          -webkit-animation: myanim 1s; }
+        .container .todo-container .todo-body ul.box .todo-item .btn-group {
+          padding-left: 20px; }
+        .container .todo-container .todo-body ul.box .todo-item .btn {
+          cursor: pointer;
+          display: inline-block;
+          padding: 5px 8px; }
+        .container .todo-container .todo-body ul.box .todo-item .btn-del {
+          color: #fff;
+          background-color: #f00; }
+    .container .todo-container .todo-add {
+      padding: 15px 0;
+      background-color: coral; }
+      .container .todo-container .todo-add .input-box {
+        font-size: 16px;
+        height: 20px;
+        padding: 8px 10px;
+        width: 55%;
+        margin-left: 10px;
+        border: 1px solid #ccc; }
+        .container .todo-container .todo-add .input-box:focus {
+          border-color: #f60; }
+      .container .todo-container .todo-add .btn-add {
+        font-size: 16px;
+        font-family: "Microsoft YaHei";
+        padding: 8px 22px;
+        border: 1px solid #abc;
+        display: inline-block;
+        vertical-align: top; }
+
+@-webkit-keyframes myanim {
+  0% {
+    margin-left: -500px; }
+  100% {
+    margin-left: 0; } }
+
+/*# sourceMappingURL=main.css.map */

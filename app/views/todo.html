@@ -1,0 +1,33 @@
+
+<div class="container">	
+	<div class="todo-container">
+		<div class="todo-header">			
+			<a href="#/">代表事项</a>
+		</div>
+		<div class="todo-body">
+			<div class="todo-add">
+				<input type="text" class="input-box" ng-model="matter" ng-keydown="todoAddKey($event)" placeholder="添加代办事项" autofocus>
+				<button class="btn-add" ng-click="todoAdd()">添加</button>
+			</div>
+			<ul class="box">
+				<li class="todo-item" ng-class="{'active': todo.first}" ng-repeat="todo in todos track by $index">
+					<div class="item">
+						<span class="text">{{todo.name}}</span>
+						<b class="btn-group">
+							<button class="btn btn-complete" ng-hide="todo.completed" ng-click="completeOrRecoverTodo(todo)">完成</button>
+							<button class="btn btn-recover" ng-show="todo.completed" ng-click="completeOrRecoverTodo(todo)">恢复</button>
+							<button class="btn btn-update" ng-click="editTodo(todo)">修改</button>
+							<button class="btn btn-del" ng-click="deleteTodo(todo.id)">删除</button>
+							<button class="btn btn-success" ng-show="todo.edit">我在编辑</button>		
+						</b>
+					</div>
+				</li>
+
+			</ul>
+			<div>
+				<input type="text" ng-model="newContent">
+				<input type="button" ng-click="doUpdateTodoContent()" value="保存修改">
+			</div>
+		</div>
+	</div>
+</div>

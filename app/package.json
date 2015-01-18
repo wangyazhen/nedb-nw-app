@@ -1,0 +1,12 @@
+{
+	"name": "芝麻糊 app",
+	"main": "index.html",
+	"window": {
+		"title": "芝麻糊",
+		"icon": "images/app.png",
+		"toolbar": false,
+		"frame": true
+		//"width": 500,
+		//"height": 300
+	}
+}

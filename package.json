@@ -1,0 +1,24 @@
+{
+  "name": "noteapp",
+  "version": "0.0.1",
+  "description": "test app ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://wangyazhen@bitbucket.org/wangyazhen/noteapp.git"
+  },
+  "keywords": [
+    "node",
+    "webkit",
+    "javascript"
+  ],
+  "author": "wangyz",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^0.9.0",
+    "nedb": "^1.1.1"
+  }
+}
